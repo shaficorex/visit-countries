@@ -1,0 +1,27 @@
+ 
+.country {
+    border: 2px solid green;
+    border-radius: 10px;
+    margin: 15px;
+    padding: 10px;
+}
+
+.btn{
+    border: 1px solid purple;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: large;
+    font-weight: bold;
+    background-color: rgb(119, 79, 118);
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: rgb(147, 72, 144);
+
+}
+
+.visited{
+    background-color: rgb(31, 83, 105);
+    font-weight: bold;
+    color: white;
+}
