@@ -10,7 +10,7 @@ function App() {
   
   return (
     <>
-      <Suspense fallback={<p>nadir is loading</p>}>
+      <Suspense fallback={<div className='make-centre'><p>Countries are Loading....</p></div>}>
         <Countries countriesPromise={countriesPromise}></Countries>
       </Suspense>
     </>

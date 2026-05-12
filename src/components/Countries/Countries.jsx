@@ -30,13 +30,19 @@ const Countries = ({ countriesPromise }) => {
     }
     return (
         <div>
-            <h1 style={{ textAlign: "center" }}>on the go: {countries.length}</h1>
+            <h1 style={{ textAlign: "center" }}>Total Country: {countries.length}</h1>
+            <p>You can visit any country clicking the buttons.<br>
+            </br>
+                You can also track where you have gone.<br>
+                </br><br />
+                <b>Why you are waiting, Let's Visit Countries</b>
+            </p>
 
             <div className="visitedCount">
                 <h2>Total country visited: {visitedCountries.length}</h2>
                 <ul>
                     {
-                        visitedCountries.map(country => <li>{country.name.common}</li>)
+                        visitedCountries.map(country => <li key={country.cca3.cca3}>{country.name.common}</li>)
                     }
                 </ul>
             </div>
